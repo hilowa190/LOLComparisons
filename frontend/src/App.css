@@ -1,0 +1,31 @@
+.App {
+    height: 100vh; /* Full viewport height */
+  }
+
+.character-grid .MuiPaper-root {
+    padding: 10px; /* Adds some space around the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .character-grid img {
+    transition: transform 0.2s; /* Adds a little animation */
+  }
+  
+  .character-grid img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+  }
+
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(3, 3, 3); /* Adjust the alpha value (0.5) for desired darkness */
+    z-index: -1; /* Ensure it's behind the content */
+  }
+  .container {
+    position: relative; /* This is necessary for absolute positioning of the overlay */
+  }
